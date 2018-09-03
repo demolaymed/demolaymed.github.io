@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Kodinger">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Nova Senha - DeMolay MED</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/my-login.css">
+	<link rel="shortcut icon" href="dm.icon.png" />
+</head>
+<body class="my-login-page">
+	<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-md-center align-items-center h-100">
+				<div class="card-wrapper">
+					<div class="brand">
+						<img src="dm.icon.png">
+					</div>
+					<div class="card fat">
+						<div class="card-body">
+							<h4 class="card-title">Resetar Senha</h4>
+							<form action="resetando.php" method="POST">
+								<div class ="form-group">
+									<label for="idreset"> ID DeMolay</label>
+									<input id="idreset" type='text' class="form-control border-danger" name="idreset" value="" required autofocus>
+								</div>
+								<div class="form-group">
+									<label for="newpass">Nova Senha</label>
+									<input id="newpass" type="text" class="form-control border-danger" name="newpass" value="" required data-eye autofocus>
+									<div class="form-text text-muted">
+										<center>Insira uma senha forte e fácil de ser memorizada!</center>
+									</div>
+								</div>
+
+								<div class="form-group no-margin">
+									<button type="submit" class="btn btn-danger btn-block">
+										Resetar Senha
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="footer">
+						Copyright &copy; 2018 &mdash; DeMolay Medianeira  
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
